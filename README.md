@@ -1,5 +1,5 @@
 # pairing-heap
-A c++ implementation of the Two-Pass Pairing Heaps data structure. This is a basic implementation of a min-heap of integers but it can be easily modified to support other types or to make it a max-heap instead. A template-based implementation would be nice to have.
+A c++ implementation of the Two-Pass Pairing Heap data structure. This is a basic implementation of a min-heap of integers but it can be easily modified to support other types of keys or to make it a max-heap instead. A template-based implementation would be nice to have.
 
 # API
 * `PairingHeap heap; // Create new empty min-heap`
