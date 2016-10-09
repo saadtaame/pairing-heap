@@ -97,20 +97,23 @@ struct PairingHeap {
     void Pop(void) {
         root = ::Pop(root);
     }
+
+    void Join(PairingHeap other) {
+        root = ::Merge(root, other.root);
+    }
 };
 
 int main(void) {
 
-    PairingHeap heap;
-    heap.Push(4);
-    heap.Push(2);
-    heap.Push(5);
-    heap.Push(-1);
+    PairingHeap heap1, heap2;
+    heap1.Push(4);
+    heap1.Push(2);
 
-    heap.Pop();
-    heap.Pop();
-    heap.Pop();
+    heap2.Push(5);
+    heap2.Push(-1);
 
-    cout << heap.Top() << endl;
+    heap1.Join(heap2);
+
+    cout << heap1.Top() << endl;
     return 0;
 }
