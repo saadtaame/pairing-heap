@@ -10,5 +10,5 @@ A c++ implementation of the Two-Pass Pairing Heap data structure. This is a basi
 * `heap.Join(); // Merge two heaps together`
 
 # Time Complexity
-* `Empty, Top, Push, and Join` take `O(1)` time in the worst case.
+* `Empty`, `Top`, `Push`, and `Join` take `O(1)` time in the worst case.
 * `Pop` takes `O(lg N)` time amortized over a sequence of operations.
