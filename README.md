@@ -4,7 +4,11 @@ A c++ implementation of the Two-Pass Pairing Heap data structure. This is a basi
 # API
 * `PairingHeap heap; // Create new empty min-heap`
 * `heap.Empty(); // True if heap is empty`
-* `heap.Top(); // Returns minimum`
+* `heap.Top(); // Return element with minimum key`
 * `heap.Push(int); // Insert new element`
-* `heap.Pop(); // Remove minimum element`
+* `heap.Pop(); // Remove element with minimum key`
 * `heap.Join(); // Merge two heaps together`
+
+# Time Complexity
+* `Empty, Top, Push, and Join` take `O(1)` time in the worst case.
+* `Pop` takes `O(lg N)` time amortized over a sequence of operations.
